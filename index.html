@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+  <title>Basic Form</title>
+</head>
+<body>
+
+<h2>Basic Form</h2>
+  <label for="email">Email:</label>
+  <input type="email" id="email"  >
+<div class="error" id="emailError"></div><br>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" placeholder="+212 *********" >
+<div class="error" id="phoneError"></div><br>
+
+  <label for="date">Date:</label>
+  <input type="date" id="date" name="date"   min="2000-01-01" max="2024-12-31"><br>
+<div class="error" id="dateError"></div><br>
+
+  <label for="message">Text:</label>
+  <textarea id="message" placeholder="SendMeMessage" name="message" ></textarea>
+<div class="error" id="messageError"></div><br>
+
+<button type="submit" onclick="submitForm()">submit</button>
+<div id="output"></div>
+<script defer src="script.js"></script>
+</body>
+</html>
